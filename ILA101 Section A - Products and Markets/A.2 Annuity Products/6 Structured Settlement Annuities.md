@@ -1,1 +1,0 @@
-- A contract that provides periodic benefits to a plaintiff, stemming from tort settlements or personal injury or wrongful death claims arising from accidents, medical malpractie, workers' compensation cases, etc.

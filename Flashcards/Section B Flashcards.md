@@ -363,4 +363,6 @@ $$ s_x = \frac{C_x}{n_x} = \text{average claim amount} $$
 	- More accurate when underlying rates are increasing, otherwise less accurate
 	- Produces same total PY exposure as the annual method, but CY allocation differs
 
-notecard 44/112
+**Describe the algorithm for calculating distributed exposure.**
+1. Calculate annual exposure in the usual way
+2. First-half exposure

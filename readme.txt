@@ -1,0 +1,1 @@
+This GitHub repository contains notes from The Infinite Actuary's ILA-101 study materials. If this raises a copyright concern to anyone of conern, please DM @tyjabeck for privitization of the repository.

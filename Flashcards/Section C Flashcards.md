@@ -172,4 +172,106 @@
 - Can be used as an allocation basis for determinstic or stochastic results
 
 **Describe the deterministic principles-based reserve methodology.**
-- FC 18/138
+- Determined in aggregate using an economic scenario
+	1. PV of cash flow approach
+		1. $\text{APV(Ben, Exp \& Related Amounts)} - \text{APV(Prems \& Related amounts)}$
+			1. First APV - include exisiting PLs and SA AV
+			2. Second APV - include PL, reinsurance, & derivative cash flows
+		2. Discount rates vary by model segment (driven by assets in segment)
+	2. Direct iteration approach
+		1. Deterministic reserve = starting asset amount that matures all future benefits and expenses
+		2. Project all cash flows iteratively until balance is found
+
+**Describe the stochastic principles-based reserve methodology.**
+- Determined in aggregate using same cash flows as deterministic
+	1. Project the model segment CFs using stochastically generated scenarios
+	2. PV negative of projected statement value of assets
+		1. $\text{Discount rates} = 1.05 \times \text{1-year treasury scenario rates}$
+	3. Sum the amounts in step (2) across all model segments at the end and beginning of each projection year
+	4. Scenario reserve = sum of the starting assets across all model segments and the maximum of the values above
+	5. Stochastic reserve = CTE70 of the scenario reserve distribution
+
+**Describe the general assumption considerations for deterministic and stochastic principles-based reserves.**
+- Most assumptions = blend of company and industry experience
+	- Higher company data credibility = closer to company experience
+	- "Prudent estimate"
+- Prescribed assumptions are limited to
+	- Interest rate movements (deterministic reserve only)
+	- Equity performance (deterministic reserve only)
+	- Spreads over treasuries on reinvestment of assets
+	- Definition of industry mortality table and method used to grade to table
+	- For ULSG: definition of industry lapse table
+- Margins for adverse deviation and estimate error (non-stochastic assumptions)
+	- Greater uncertainty = larger margin = larger reserve
+	- Higher margin if credibility, data quality, assumption reliability are low
+
+**Describe VM-20 mortality assumptions.**
+- VM-20 prescribes company/industry blending table
+	- Varies with credibility and "sufficient data period"
+- VM-20 prescribed margins that vary by attained age
+	- Company margins also vary with credibility
+- Mortality improvement assumptions:
+	- Between experience date and valuation date:
+		- Improve company experience using supported company-specific factors
+		- Improve industry experience using SOA-published rates
+	- After valuation date (future mortality):
+		- Use VM-20 prescribed mortality improvement rates
+
+**Describe VM-20 policyholder behavior assumptions.**
+- Policyholder behavior risk factors:
+	- Premium payment patterns and premium persistency
+	- Partial and full withdrawals (surrenders)
+	- Allocation of funds between investment options
+	- Other policyholder benefits options
+- VM-20 requirements:
+	- Use experience data from the same block being modeled; else similar block
+	- Include margin: lower credibility = more conservative assumption
+	- Dynamic assumptions should be consistent with economic scenario
+
+**Describe VM-20 expense assumptions.**
+- Same assumption for deterministic and stochastic (except inflation effects)
+- Considerations:
+	- Spread capital expenditures (IT, etc.)
+	- Assume going concern
+	- Exepense bias
+		- Align with actual expense
+		- Consistent between new and in-force policies
+	- Reflect inflation
+	- NO future expense improvements
+	- NO taxes
+	- Consistency with related assumptions
+- Types of expenses to include:
+	- Direct + indirect + overhead
+	- Acquisition expenses
+	- Any expected future non-recurring
+	- Efficiencies from combinations and mergers
+- Use FULLY allocated expenses
+	- Consistent allocation across LOBs
+
+**Compare reinsurance under a ruled-based vs. principles-based approach.**
+- Rules-based methodology
+	- Mirror-image reserves (usually)
+	- Ceding company reserve credit = reinsurer's assumed reserve
+- Principles-based methodology
+	- Mirror-image reserves not required (or likely)
+	- Ceding company and reinsurer use their own assumptions
+	- Reinsurance Reserve Credit = Pre-Reinsurance-Ceded Minimum Reserve - Post-Reinsurance-Ceded Minimum Reserve
+		- For pre-insurance run: follow VM-20 assuming reinsurance didn't exist
+		- 98% to 102% collar for starting assets does NOT reply
+	- Reinsurance features like stop-loss may require additional stochastic analysis
+	- If YRT rates are non-guaranteed: reserve credit is based on pre-PBR approach
+
+**Give an overview of the asset modeling framework under VM-20.**
+- Exisiting assets = SA assets + PLs + Derivatives + GA assets
+	- "Solve" for GA Asset balance so that toal = 98-102% of reported reserve
+	- Will require iterations
+- Reinvestment assets
+	- VM-20 prescribes yield spread
+	- Reflect investment policies of the company
+		- Should not produce a lower reserve than "alternative investment strategy"
+		- VM-20 prescribes 50/50 mix of A and AA public non-callable corporate bonds
+- Reflect default costs on all modeled assets
+
+**Describe how derivative programs are treated under VM-20.**
+- Future derivative transactions can be reflected if part of a CDHS
+	- Clearly Defined Hedging Strategy (CDHS) criteria
